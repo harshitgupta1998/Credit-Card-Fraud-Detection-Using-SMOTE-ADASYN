@@ -28,7 +28,7 @@ Dataset Time Span: The dataset covers a short period of time, only two days, and
 
 Given the time frame and features, we can explore the distribution of transaction amounts and the time between transactions, as well as the imbalance in the fraud class, while keeping in mind that the other 28 PCA-transformed features encapsulate abstracted information about the original data.
 
-ost of the transaction amounts fall within the range of 0 to around 3,000, with a few extreme outliers representing significantly larger amounts. It may be practical to consider removing these outliers from the analysis, especially if they represent only a small number of transactions, as they could skew the results.
+Cost of the transaction amounts fall within the range of 0 to around 3,000, with a few extreme outliers representing significantly larger amounts. It may be practical to consider removing these outliers from the analysis, especially if they represent only a small number of transactions, as they could skew the results.
 
 Given that most daily transactions are relatively modest in size, it's possible that fraudulent activity is occurring more frequently in these smaller, common transactions. Analyzing these typical transactions more closely might help uncover patterns associated with fraud, as larger outliers may not provide as much valuable insight in detecting fraudulent behavior.
 
