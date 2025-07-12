@@ -48,8 +48,7 @@ There are 27 fraudulent transactions with a $0 amount. These likely represent Ze
 This information reveals that fraudulent transactions can occur at any amount, including small or zero-dollar transactions. Fraudsters may use zero-authorization checks as a way to verify the validity of a card before proceeding with larger transactions. These insights highlight the need for predictive models to account for both small and large transactions when identifying potential fraud.
 
 Useful to actually have our model train on these extreme outliers.
-ChatGPT said:
-ChatGPT
+
 Most of the transaction amounts range between 0 and approximately 3,000, with a few outliers representing significantly larger amounts. It might be beneficial to remove these extreme outliers from the analysis, especially if they represent only a small number of transactions. However, we must ensure that none of these outliers are fraudulent transactions, as removing fraudulent outliers could introduce bias into the model.
 
 Fraudulent transactions with unusually high amounts are important to include in the model, as excluding them could result in under-predicting fraud for larger amounts. Therefore, it's essential to carefully identify and manage outliers, ensuring that removing them improves the model's performance without compromising its ability to detect fraud in both typical and extreme cases.
